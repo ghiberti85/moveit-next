@@ -75,4 +75,9 @@
   color: var(--text);
   cursor: not-allowed;
   border-bottom: 5px solid var(--green);
+  transition: 0.5s;
+}
+
+.countdownButton:disabled img {
+  margin-left: 1rem;
 }

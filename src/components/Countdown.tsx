@@ -1,8 +1,9 @@
 import { useContext, useEffect, useState } from "react";
-import { ChallengesContext } from "../contexts/ChallengeContext";
 import { CountdownContext } from "../contexts/CountdownContext";
 
 import styles from "../styles/components/Countdown.module.css";
+
+import UncontrolledLottie from './UncontrolledLottie';
 
 export function Countdown() {
 
@@ -37,7 +38,7 @@ export function Countdown() {
       {hasFinished ? (
         <button disabled className={styles.countdownButton}>
           Ciclo encerrado 
-          <img src="icons/check_circle.svg" alt="check-circle"/>
+          <UncontrolledLottie />
         </button>
       ) : (
         <>
